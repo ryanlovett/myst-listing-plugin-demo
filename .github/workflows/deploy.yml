@@ -39,11 +39,11 @@ jobs:
       - name: Install MyST Markdown
         run: npm install -g mystmd
       - name: Install myst-parser
-        run: npm install -g myst-parser
+        run: npm install myst-parser
       - name: Install js-yaml
-        run: npm install -g js-yaml
+        run: npm install js-yaml
       - name: Install glob
-        run: npm install -g glob
+        run: npm install glob
       - name: Build HTML Assets
         run: myst build --html
       - name: Upload artifact
