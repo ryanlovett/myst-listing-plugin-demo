@@ -178,7 +178,7 @@ function assembleGridAST(fileData, gridColumns = [1, 1, 2, 3], imageWidth, image
     type: 'grid',
     columns: columns,
     children: fileData.map(({ title, author, description, thumbnail, filename, bodyNodes, date }) => {
-      const url = `/${filename.replace(/\.md$/, '')}`;
+      const url = `${filename.replace(/\.md$/, '')}`;
       const cardChildren = [
         renderGridCardHeader(gridCardHeaderTemplate, title, date, url)
       ];
