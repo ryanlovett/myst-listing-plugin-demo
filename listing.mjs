@@ -61,7 +61,7 @@ function assembleSummaryAST(fileData, imageWidth, imageHeight) {
           {
             type: 'link',
             class: 'listing-summary-title',
-            url: `/${filename.replace(/\.md$/, '')}`,
+            url: `${filename.replace(/\.md$/, '')}`,
             children: [{ type: 'text', value: safeText(title) }]
           }
         ]
@@ -135,7 +135,7 @@ function assembleTableAST(fileData) {
               children: [
                 {
                   type: 'link',
-                  url: `/${filename.replace(/\.md$/, '')}`,
+                  url: `${filename.replace(/\.md$/, '')}`,
                   children: [{ type: 'text', value: title || '' }]
                 }
               ]
