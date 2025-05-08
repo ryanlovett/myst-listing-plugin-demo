@@ -1,0 +1,25 @@
+version: 1
+project:
+  toc: 
+    - file: index.md
+    - file: blog.md
+      children:
+        - pattern: blog/**/index.md
+    - file: assignments.md
+      children:
+        - pattern: assignments/*.md
+    - file: motd.md
+      children:
+        - pattern: motd/*.md
+  plugins:
+    - type: javascript
+      path: listing.mjs
+
+site:
+  template: book-theme
+  title: "Demo of myst-listing-plugin"
+  domains:
+    - ryanlovett.github.io
+  options:
+    folders: true
+    style: ./assets/style.css
